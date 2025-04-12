@@ -1,0 +1,5 @@
+<div #logContainer class="console" (scroll)="onScroll($event)">
+  <div *ngFor="let log of dataLogs">
+    <pre>{{ log | json }}</pre>
+  </div>
+</div>
